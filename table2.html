@@ -3,22 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
+    <title>Document</title>
     <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0; 
-      }
-      #logo{
-        width: 250px;
-        /* padding-bottom: 450px;
-        padding-right: 250px; */
-        margin-bottom: 550px;
-        margin-right: 250px;
-        
+      #logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
       }
 
       table {
@@ -26,7 +16,8 @@
         border-collapse: collapse;
         padding: 10px;
         text-align: center;
-        margin-right: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
       }
 
       th,
@@ -42,14 +33,20 @@
       .time {
         font-weight: bold;
       }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #333;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
     <img src="AJU.png" alt="" id="logo" />
-    <div>
-      <a href="home.html">Home</a>
-
-    </div>
     <table>
       <caption>
         Department of Computer Science & Engineering
@@ -130,5 +127,12 @@
         </tr>
       </tbody>
     </table>
+    <nav class="sidebar">
+      <ul>
+        <li><a href="home.html">Homepage</a></li>
+        <li><a href="#section2">Page 2</a></li>
+        <li><a href="#section3">Page 3</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
